@@ -23,8 +23,6 @@ func main() {
 	defer c.Close()
 	done := make(chan struct{})
 
-
-
 	go func() {
 		read(done, c)
 	}()
